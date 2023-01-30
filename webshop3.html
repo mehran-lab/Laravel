@@ -1,81 +1,188 @@
 <!DOCTYPE html>
-     <html>
- <head>
-    <link rel="stylesheet" href="style2.css" />
+<html>
+<head>
 
- <body>
-    <div class="aside">
-      <i class="fa fa-bars"></i>
-      <i class="fa fa-home"></i>
-      <i class="fa fa-search"></i>
-      <i class="fa fa-volume-up"></i>
-      <i class="fa fa-user"></i>
-      <i class="fa fa-spotify"></i>
-      <i class="fa fa-cog"></i>
-      <i class="fa fa-soundcloud"></i>
+  <meta charset="UTF-8">
+  <title>Bookshop</title>
+  <link rel="stylesheet" href="style9.css">
+
+</head>
+
+
+
+    <div class='navbar'>
+    <div class='logo'>Bookshop</div>
+    <div class='account-container'>
+      <i class="fa fa-user" aria-hidden="true"></i>
+      <div class='cart-desc'>Buy your books online here</div>
     </div>
-   <div class="main">
-    <div class="main__header">
-      <div class="img">
-      <img src="book.webp"/> <!--Album art-->
-      </div> 
-        <section class="details"> <!--other details of the album-->
-              <div>
-                <p>Buy online with bookshop</p>
-                <p class="sm--hide">Newest</p>
-                <p class="sm--hide">Bestsellers</p>
-              </div>
-          
-              <div> 
-                <img src="Reserve.jpg" width="230px" alt="Dessert" title="RESERVE">     
-      <img src="bono.jpg" width="230px" alt="Beach" title="Bono">
-      </a>
-      <img src="beesten.jpg"width="230px" alt="Waterfall" title="Beesten">
-      <img src="Kool.jpg" width="230px" alt="Dessert" title="kool">
-     
-              </div>
-              <ul id="navbar">
-                <li><a href="#gridContainer">Romans</a></li>
-                <li><a href="#green">Thriller</a></li>
-                <li><a href="#orange">Childeren books</a></li>
-                <li><a href="#gridContainer">Fantasy</a></li>
-                <li><a href="#green">Cook boeks</a></li>
-                <li><a href="#orange">Roman thrillers</a></li>
-            </ul>
-        </section>
+    <div class='cart-container'>
+      <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+      <div class='cart-desc'>wagen</div>
     </div>
-    <div class="main__body">
-        <div>
-              <p>Reserve</p>
-              <p>Prins Harry</p>
-              <p>29,99€</p>
-              <p><span>528 blz</span></p>
-        </div>
-        <div>
-              <p>Surrender</p>
-              <p>Bono</p>
-              <p>24,99€</p>
-              <p><span>656 blz</span></p>
-        </div>
-        <div>
-              <p>De beesten</p>
-              <p>Gijs Wilbrink</p>
-              <p>23,99€</p>
-              <p><span>304blz</span></p>
-         </div>
-         <div>
-              <p>Koolhydratarme bijbel</p>
-              <p>jannek vreugdenhil</p>
-              <p>15€</p>
-              <p><span>512 blz</span></p>
-         </div>
-    </div>
+    
   </div>
+  
+  <!-- INFO BAR -->
+  <div class='info-wrapper'>
+    <div class='shipping-container'>
+      <i class="fa fa-truck fa-2x "></i>
+      <div class='info-desc'>Bestsellers</div>
+    </div>
+    
+  </div>
+  
+  <!-- MAIN WRAPPER -->
+  <div class='main-wrapper'>
+    <div class="menu">
+      <div class='menu-item''>
+        <div class='menu-item-title'>Romans</div>
+      </div>
+      <div class='menu-item'>
+        <div class='menu-item-title'>Thrillers</div>
+      </div>
+      <div class='menu-item'>
+        <div class='menu-item-title'>Fantasy</div>
+      </div>    
+      <div class='menu-item'>
+          <div class='menu-item-title'>Childerenbooks</div>
+        </div>
+        <div class='menu-item'>
+          <div class='menu-item-title'>Cookbooks</div>
+        </div>
+        <div class='menu-item'>
+          <div class='menu-item-title'>Romansthrillers</div>
+        </div>
+    </div>
+  
+    <div class='products-container'>  
+      <div class='shop-card'>
+        <div class="title">Reserve</div>
+        <div class="desc">Prins harry</div>
+        <div class="product"><img src="Reserve.jpg" /></div>
+        <div class='cta'>
+          <div class="price">€29,99</div>
+          <button class="button">Add to cart</button>
+        </div>
+      </div>
+  
+      <div class='shop-card' data-cat='Amazon'>
+        <div class="title">
+          Surrender
+        </div>
+        <div class="desc">
+          Bono
+        </div>
+        <div class="product">
+           <img src="bono.jpg" />
+        </div>
+        <div class='cta'>
+          <div class="price">€24,99</div>
+          <button class="button">Add to cart</button>
+        </div>
+      </div>
+  
+      <div class='shop-card' data-cat='Lenovo'>
+        <div class="title">
+          De beesten
+        </div>
+        <div class="desc">
+          Gijs Wilbrink
+        </div>
+        <div class="product">
+           <img src="beesten.jpg" />
+        </div>
+        <div class='cta'>
+          <div class="price">$90</div>
+          <button class="button">Add to cart</button>
+        </div>
+      </div>
+      <div class='shop-card' data-cat='Lenovo'>
+        <div class="title">
+        Kaasfabriek
+        </div>
+        <div class="desc">
+          Simone van der Vlugt
+        </div>
+        <div class="product">
+           <img src="kaasfabriek.jpg"width=50% />
+        </div>
+        <div class='cta'>
+          <div class="price">€15</div>
+          <button class="button">Add to cart</button>
+        </div>
+      </div>
+      
+      <div class='shop-card' data-cat='Lenovo'>
+        <div class="title">
+          Atlas
+        </div>
+        <div class="desc">
+          lucinda riley
+        </div>
+        <div class="product">
+           <img src="atlas.jpg" />
+        </div>
+        <div class='cta'>
+          <div class="price">€29,99</div>
+          <button class="button">Add to cart</button>
+        </div>
+      </div>
+      <div class='shop-card' data-cat='Lenovo'>
+        <div class="title">
+          oktober
+        </div>
+        <div class="desc">
+          Søren Sveistrup
+        </div>
+        <div class="product">
+           <img src="Oktober.jpg" />
+        </div>
+        <div class='cta'>
+          <div class="price">€8,99</div>
+          <button class="button">Add to cart</button>
+        </div>
+      </div>
+      <footer class="footer">
+      <div class="flex-container">
+        <div><h4>Subscribe</h4>
+          <p>To get special offers and VIP treatment:</p>
+          <p><input class="input -border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+          <button type="button" class="margin-bottom">Subscribe</button></div>
+       
+      
+        <div> <h4>Store</h4>
+          <p> Company Name</p>
+          <p>0044123123</p>
+          <p> ex@mail.com</p></div>  
+      </div>
+      
+        
+     
+      
+      </div>
+    </div>
+  </footer>
+  
 
-
-
-  <div class="footer"></div>
-
-
- </body>
+  <!--$('.cart-container').on('click', function (e) {
+  
+    $('.modal').toggleClass('active');
+    
+  });
+  
+ $('.Amazon').on('click', function (e) {
+    
+    $('.shop-card').hide(300);
+    $('*[data-cat="Amazon"]').show(300);
+    
+  });
+  
+  $('.Lenovo').on('click', function (e) {
+    
+    $('.shop-card').hide(300);
+    $('*[data-cat="Lenovo"]').show(300);
+    
+  });-->
+</body>
 </html>
