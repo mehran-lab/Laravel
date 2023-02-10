@@ -8,9 +8,18 @@ background: radial-gradient(ellipse farthest-corner at center top, #446CB3 0%, #
 color: #fff;
 font-family: 'Open Sans', sans-serif;
 }
+/* Flex Container */ 
 
-}
-
+.flexContainer{
+  
+   display : flex; 
+   flex-direction: row;
+   flex-wrap : wrap; 
+   justify-content: space-around;
+   
+ }
+ 
+ 
 /*--------------------
 NAVBAR
 --------------------*/
